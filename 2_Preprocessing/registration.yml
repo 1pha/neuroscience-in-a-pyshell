@@ -1,0 +1,49 @@
+Pipeline:   
+  - transform_centers_of_mass
+  - TranslationTransform3D
+  - RigidTransform3D
+  - AffineTransform3D
+  - SymmetricDiffeomorphicRegistration
+            
+Linear:
+  metric:
+    name: MutualInformationMetric
+    nbins: 32
+    sampling_prop: ~
+
+  default:
+    level_iters: [10, 10, 5]
+    sigmas: [3.0, 1.0, 0.0]
+    factors: [4, 2, 1]
+    params0: ~
+
+  translation:
+    level_iters: [10, 10, 5]
+    sigmas: [3.0, 1.0, 0.0]
+    factors: [4, 2, 1]
+    params0: ~
+
+  rigid:
+    level_iters: [10, 10, 5]
+    sigmas: [3.0, 1.0, 0.0]
+    factors: [4, 2, 1]
+    params0: ~
+
+  affine:
+    level_iters: [2000, 2000, 200] # DEFAULT [1000, 1000, 100]
+    sigmas: [3.0, 1.0, 0.0]
+    factors: [4, 2, 1]
+    params0: ~
+    
+NonLinear:
+  metric:
+    name: CCMetric
+    dim: 3
+
+  symmetricdr:
+    level_iters: [100, 100, 25] # DEFAULT [10, 10, 5]
+
+Misc:
+  debug: True
+  verbose: 
+    loss: True
