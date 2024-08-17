@@ -15,7 +15,7 @@ This repository contains a wide range of tutorials, examples, and code snippets 
 2. [**Preprocessing**](./2_Preprocessing/README.md): Learn how to handle and preprocess MRI scans, including tasks such as skull stripping, motion correction, and normalization. These tutorials are based on my personal experiences and challenges faced during my research.
 3. [**Brains to Python**](./3_BrainsToPython/README.md): Python libraries for brain processing, including visualization or brain i/o
 4. [**Miscellaneous**](./4_Misc/README.md): Minor hacks for pipelines.
-5. **Example Code**: Colab code encompassing contents above. Access via <a target="_blank" href="https://colab.research.google.com/github/https://colab.research.google.com/drive/1HFiyO0Wq8r9nAfveFD4Md5RzAn95Qvva?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
+5. **Example Code**: Colab code encompassing contents above. Access via<a target="_blank" href="https://colab.research.google.com/drive/1HFiyO0Wq8r9nAfveFD4Md5RzAn95Qvva?usp=sharing"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
 ## TBD
 - **Basic PyTorch and Pytorch-lightning**: Simple deep learning pipeline with pytorch frameworks.
